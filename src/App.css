@@ -1,0 +1,449 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#bg1 {
+background-color: #BBEBFB;
+height: 100vh;
+width: 100%;
+position: fixed;
+margin-top: -155px;
+z-index: -2;
+right: 0;
+}
+
+#bg2 {
+background-color: #100440;
+height: 100vh;
+width: 100%;
+position: fixed;
+z-index: -1;
+margin-top: 15vw;
+right: 0;
+}
+
+#headerImage {
+  width: 100%;
+  display: block;
+  margin: 10% auto auto auto;
+}
+
+#nameTitle {
+  margin: -2vw auto auto auto;
+  background-color: #f56f42;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 10vw;
+}
+
+#name {
+  color: white;
+  width: 100%;
+  font-size: 2vw;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: -20px;
+  margin-top: 3vw;
+  position: relative;
+  right: 5px;
+}
+
+#title {
+  color: white;
+  width: 100%;
+  font-size: 1.5vw;
+  text-align: right;
+  position: relative;
+  right: 5px;
+}
+
+/* Information section begins here */
+
+#infoWrapper {
+  background-color: #363636;
+  min-height: 50vw;
+  width: 30%;
+  display: block;
+  margin: -22px auto auto auto;
+}
+/*
+#cellLink:hover {background-color: #545454;}
+#emailLink:hover {background-color: #545454;}
+#websiteLink:hover {background-color: #545454;}
+#locationLink:hover {background-color: #545454;}
+#facebookLink:hover {background-color: #545454;}
+*/
+
+.contactDetails {
+height: 5vw;
+cursor: pointer;
+border-bottom: 1px solid gray;
+}
+
+.contactDetails:hover {background-color: #545454;}
+
+.contactIconContainer {
+width: 8%;
+float: left;
+}
+
+.contactIcon {
+margin-top: 70%;
+margin-left: 50%;
+width: 1.1vw;
+height: 1.5vw;
+}
+
+.contactText {
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+line-height: 1px;
+padding-left: 50px;
+padding-top: .1pt;
+font-size: 1.2vw;
+}
+
+
+.topText {
+  margin-left: 1vw;
+  font-size: 1.5vw;
+}
+
+.bottomText {
+  margin-left: 1vw;
+  margin-top: -10px;
+  font-size: 1vw;
+}
+
+.contactFormWrapper form{
+margin-left: 18px;
+color: white;
+line-height: 25px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+#contactMe {
+color: white;
+text-align: center;
+text-decoration: underline;
+}
+
+.floatLeft {
+  float: left;
+}
+
+#phoneMargin {
+  margin: auto auto auto 50px;
+}
+
+#nameInput {
+  width: 10vw;
+}
+
+#phoneInput {
+  margin-left: 50px;
+  width: 10vw;
+}
+
+#emailInput {
+  width: 13vw;
+  }
+
+#companyInput {
+width: 20vw;
+}
+
+#subjectInput {
+  width: 25vw;
+}
+
+#commentInput {
+width: 27vw;
+}
+
+#sendButton {
+background-color: #f56f42;
+border-style: solid;
+border-color: white;
+color: white; width: 10vw;
+height: 32px;
+width: 100px;
+font-size: 1.5vw;
+margin: 20px auto auto auto;
+float: left;
+}
+
+#reCaptcha {
+  float: left;
+  margin-right: 1.1vw;
+}
+
+#copyRight {
+text-align: center;
+color: white;
+border-top: 1px solid gray;
+line-height: 25px;
+margin-top: 140px;
+}
+/* Loading Spinner */
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: 45%;
+  margin-top: 25%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+@media (max-width: 900px) {
+  #infoWrapper {
+    min-height: 50vw;
+    width: 54%;
+    display: block;
+    margin: -22px auto auto auto;
+  }
+
+  .contactText {
+    line-height: 0px;
+    padding-left: 50px;
+    padding-top: .1pt;
+    font-size: 2.5vw;
+    }
+
+  .contactDetails {
+    height: 68px;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+    }
+    
+  .contactIconContainer {
+  width: 8%;
+  float: left;
+  }
+  
+  .contactIcon {
+  margin-top: 60%;
+  margin-left: 50%;
+  width: 2vw;
+  height: 3vw;
+  }
+
+  .bottomTextBorder {
+    margin-top: -5px;
+    font-size: 1.5vw;
+  }
+
+  #name {
+    margin-top: 25px;
+    font-size: 4vw;
+  }
+
+  #title {
+    font-size: 3vw;
+  }
+
+  #nameTitle {
+    height: 15vw;
+  }
+
+  .contactIcon {
+    margin-top: 70%;
+    margin-left: 50%;
+    width: 2.5vw;
+    height: 4vw;
+  }
+
+  .contactText {
+    margin-left: .5vw;
+  }
+  
+  .topText {
+    margin-top: 30px;
+    font-size: 3vw;
+  }
+  
+  .bottomText {
+    margin-top: -10px;
+    font-size: 2vw;
+  }
+
+  #phoneMargin {
+    margin: auto auto auto auto;
+  }
+  
+  #nameInput {
+    width: 43.5vw;
+  }
+  
+  #phoneInput {
+    margin-left: auto;
+    width: 43.5vw;
+  }
+  
+  #emailInput {
+    width: 43.5vw;
+  }
+  
+  #companyInput {
+    width: 43.5vw;
+  }
+  
+  #subjectInput {
+    width: 43.5vw;
+  }
+  
+  #commentInput {
+    width: 44vw;
+  }
+  
+  #sendButton {
+  color: white; width: 15vw;
+  height: 4.4vw;
+  font-size: 3vw;
+  margin: 10px auto auto auto;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+
+  #infoWrapper {
+    width: 100%;
+  }
+
+  #bg2 {
+    background-color: #363636;
+  }
+
+  #headerImage {
+      width: 100%;
+      margin: auto;
+  }
+
+  #nameTitle {
+      width: 100%;
+      height: 19vw;
+      margin: auto;
+      line-height: 25px;
+  }
+
+  #name {
+      font-size: 5vw;
+      float: right;
+      margin-right: 10px;
+      margin-top: 4vw;
+  }
+
+  #title {
+      font-size: 3.5vw;
+      float: right;
+      margin-right: 10px;
+}
+
+.contactDetails {
+  width: 100%;
+}
+
+.contactIcon {
+  margin-top: 70%;
+  margin-left: 50%;
+  width: 4vw;
+  height: 5.5vw;
+}
+
+.contactText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 3px;
+  padding-top: 1px;
+  padding-left: 13vw;
+}
+
+.topText {
+  font-size: 5vw;
+  margin-top: 23px;
+}
+
+.bottomText {
+  margin-top: -5px;
+  font-size: 3vw;
+}
+
+#iconFix {
+  width: 3.8vw; 
+  margin-left: 40%;
+}
+
+#nameInput {
+  font-size: 4vw;
+  width: 70vw;
+}
+
+#phoneMargin {
+  margin: auto auto auto auto;
+}
+
+#emailInput {
+  width: 70vw;
+  font-size: 4vw;
+}
+
+#phoneInput {
+  width: 70vw;
+  font-size: 4vw;
+  margin-left: auto;
+}
+
+#companyInput {
+  width: 80vw;
+  font-size: 4vw;
+}
+
+#subjectInput {
+  width: 80vw;
+  font-size: 4vw;
+}
+
+#commentInput {
+  width: 88vw;
+  font-size: 4vw;
+}
+
+.contactFormWrapper form input {
+  color: black;
+}
+
+#sendButton {
+  color: white; width: 10vw;
+  height: 35px;
+  width: 120px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px auto auto auto;
+}
+
+#copyRight {
+  padding-top: 10px;
+}
+
+.loader {
+  margin-left: 33%;
+  margin-top: 60%;
+}
+}

@@ -41,7 +41,7 @@ class ContactForm extends React.PureComponent {
     const { recaptchaLoad, isVerified } = this.state;
     event.preventDefault();
     const ref = firebase.firestore().collection("contacts");
-    // if (recaptchaLoad && isVerified) {
+    if (recaptchaLoad && isVerified) {
     const { name, phone, email, company, subject, message } = this.state;
     const templateParams = {
       from_name: name,
@@ -73,9 +73,9 @@ class ContactForm extends React.PureComponent {
     });
     alert('Your message has been sent successfully. We will contact you soon.');
     this.resetForm();
-    // } else {
-    //   alert('Please check the Recaptcha before sending your message');
-    // }
+    } else {
+      alert('Please check the Recaptcha before sending your message');
+    }
   };
 
   resetForm() {

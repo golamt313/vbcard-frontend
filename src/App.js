@@ -7,7 +7,7 @@ import ContactForm from './Components/ContactForm';
 
 function App() {	
 
-	const url = 'https://api.golam.dev/testAPI';
+	const url = 'https://tandt.deltanetsystems.com/testAPI';
 	const [state, setState] = useState(null)
 	
     useEffect(() => {
